@@ -69,8 +69,12 @@ The project is built using **Firebase** for backend services and **Google Gemini
 ## 🎯 Project Goal
 StudyMate AI aims to provide students with an interactive and intelligent learning companion that makes studying more engaging, organized, and efficient.
 
----
+Created By:
+Chaitanaya Pahade
+Prem Purohit
+Aliasgher Hussain
+Arnav Domalwar
+Students of BTech- Electronics and Computer Science
+RAMDEOBABA UNIVERSITY, NAGPUR
 
-## 👤 Author
-**Chaitanya Pahade**  
-B.Tech – Electronics & Computer Science  
+
