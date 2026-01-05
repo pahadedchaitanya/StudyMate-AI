@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>StudyMate AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- AUTH SECTION -->
+  <div id="authSection" class="auth-container">
+    <h2 class="app-title">StudyMate AI</h2>
+
+    <div class="auth-card">
+      <h3>Create Account</h3>
+      <input id="name" placeholder="Full Name">
+      <input id="email" placeholder="Email">
+      <input id="password" type="password" placeholder="Password">
+      <button onclick="signup()">Sign Up</button>
+    </div>
+
+    <div class="auth-card">
+      <h3>Login</h3>
+      <input id="loginEmail" placeholder="Email">
+      <input id="loginPassword" type="password" placeholder="Password">
+      <button onclick="login()">Login</button>
+      <p id="statusText"></p>
+    </div>
+  </div>
+
+  <!-- APP SECTION -->
+  <div id="appSection" class="app-layout" style="display:none;">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <h3 class="logo">StudyMate</h3>
+
+      <div id="bookmarkList" class="section"></div>
+
+      <hr>
+
+      <div id="chatList" class="section"></div>
+
+      <button class="new-chat-btn" onclick="createChat()">＋ New Chat</button>
+    </aside>
+
+    <!-- MAIN CHAT AREA -->
+    <main class="chat-area">
+      <header class="chat-header">
+        <h2 id="welcomeText"></h2>
+        <div class="header-actions">
+          <button id="bookmarkToggleBtn" onclick="toggleBookmark()">⭐ Bookmark</button>
+          <button class="logout-btn" onclick="logout()">Logout</button>
+        </div>
+      </header>
+
+      <div id="chatBox" class="chat-box" style="display:none;">
+        <div id="messages" class="messages"></div>
+
+        <div class="input-area">
+          <input id="messageInput" placeholder="Ask StudyMate anything...">
+          <button onclick="sendMessage()">Send</button>
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
